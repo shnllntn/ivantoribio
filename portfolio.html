@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Bakbak One', sans-serif;
+      background-color: #d14f4f;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
+      position: relative;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 1700px;
+      margin-top: -50px;
+    }
+
+    span{
+      font-size: 30px;
+    }
+
+    .titlelogo{
+      display: flex;
+      align-items: center;
+      gap: 1px;
+      font-size: 4rem;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .logo img {
+      height: 140px;
+
+    }
+
+    nav {
+      display: flex;
+      gap: 1px;
+      align-items: center;
+      padding-bottom: -10px;
+      padding-left:400px;
+      justify-content: space-between;
+    }
+
+
+
+    nav a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      position: relative;
+      font-size: 4rem;
+
+    }
+
+    nav a:hover {
+      color: #0000ff;
+    }
+
+    main {
+      text-align: center;
+      margin-top: 1px;
+    }
+
+    .title h1 {
+      font-size: 3.5rem;
+      letter-spacing: 10px;
+      margin: 0;
+      color: #fff;
+    }
+
+    .title p {
+      color: #fff;
+      margin: 5px 0 20px;
+      font-size: 2.1rem;
+      font-weight: bold;
+    }
+
+    .filter-bar {
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 20px 100px;
+      border-radius: 5px;
+      display: inline-flex;
+      gap: 130px;
+      margin-bottom: 30px;
+    }
+
+    .filter-bar button {
+      background: none;
+      border: none;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 2rem;
+      font-weight: 100;
+      transition: transform 0.3s;
+    }
+
+    .filter-bar button:hover {
+      transform: scale(1.1);
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 200px;
+      padding: 0 20px;
+    }
+
+    .project-box {
+      width: 400px;
+      height: 350px;
+      background-color: white;
+      border-radius: 5px;
+    }
+
+    .divider {
+      display: inline-block;
+      height: 5px;
+      width: 200px;
+      background-color: #ffffff;
+      vertical-align: middle;
+      margin: 0 20px;
+    }
+
+    
+    footer {
+      margin: 40px 0 20px;
+      font-size: 0.9rem;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 10px;
+        gap: 20px;
+      }
+
+      .projects {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+
+
+    .line{
+      position: absolute;
+      display: block;
+      width: 4px;
+      left: 120px;
+      top: 520px;
+      height: 270px;
+      border-radius: 25px;
+      opacity: 0.9;
+      background-color: #fff;
+  }
+
+  .bilog{
+      position: absolute;
+      display: block;
+      width: 10px;
+      height: 10px;
+      left: 117px;
+      top: 810px;
+
+      border-radius: 25px;
+      opacity: 0.9;
+      background-color: #fff;
+  }
+
+
+
+
+  .line1{
+    position: absolute;
+    display: block;
+    width: 4px;
+    left: 720px;
+    top: 520px;
+    height: 270px;
+    border-radius: 25px;
+    opacity: 0.9;
+    background-color: #fff;
+}
+
+.bilog1{
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    left: 717px;
+    top: 810px;
+
+    border-radius: 25px;
+    opacity: 0.9;
+    background-color: #fff;
+}
+
+
+.line2{
+  position: absolute;
+  display: block;
+  width: 4px;
+  left: 1320px;
+  top: 520px;
+  height: 270px;
+  border-radius: 25px;
+  opacity: 0.9;
+  background-color: #fff;
+}
+
+.bilog2{
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  left: 1317px;
+  top: 810px;
+
+  border-radius: 25px;
+  opacity: 0.9;
+  background-color: #fff;
+}
+
+  
+
+.project-box.image1{
+  background: url(/images/picture/examplepic.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.project-box.image2{
+  background: url(/images/picture/examplepic2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.project-box.image3{
+  background: url(/images/picture/examplepic3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.right-box{
+  z-index: 999;
+  background-color: #ffffff;
+  width: 400px;
+  height: 250px;
+  top: -80px;
+
+  left: 1500px;
+  position: absolute;
+  animation: growBox 0.8s ease-out forwards;
+}
+
+.right-box::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  border: 6px solid rgb(255, 255, 255);
+  width: 80%;
+  height: 350px;
+  top: -40px;
+
+
+
+  left: 100px;
+  box-sizing: border-box;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="lpage.html"><img src="/images/dice.png" alt="Dice" /></a>
+      <h1 class="titlelogo">Dice</h1>
+    </div>
+
+    <nav>
+      <a href="aboutpage.html" class="active">ABOUT</a>
+      <span class="divider"></span>
+      <a href="/PERSONAL PORTFOLIO/contact.html">CONTACTS</a>
+    </nav>
+    
+  </header>
+
+  <main>
+    <div class="title">
+      <h1>PORTFOLIO</h1>
+      <p>Selected works</p>
+    </div>
+
+    <div class="filter-bar">
+      <button>All</button>
+      <button>Videos</button>
+      <button>Photos</button>
+      <button>Details</button>
+    </div>
+
+    <div class="line"></div>
+    <div class="bilog"></div>
+
+    <div class="line1"></div>
+    <div class="bilog1"></div>
+    
+    <div class="line2"></div>
+    <div class="bilog2"></div>
+
+    <div class="right-box"></div>
+    
+    <div class="projects">
+      <div class="project-box image1"></div>
+      <div class="project-box image2"></div>
+      <div class="project-box image3"></div>
+    </div>
+
+
+  </main>
+
+  <footer>
+    © 2025 Ivan Toribio, All Rights Reserved.
+  </footer>
+
+</body>
+</html>

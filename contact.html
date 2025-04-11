@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Bakbak One', sans-serif;
+      margin-top: 100px;
+      background-color: #f4f3fb;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
+      position: relative;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 1700px;
+      margin-top: -20px;
+    }
+
+
+    .titlelogo{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 4rem;
+      font-weight: bold;
+    }
+
+    .logo img {
+      height: 180px;
+    }
+
+    nav {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      padding-bottom: 50px;
+      padding-left:300px;
+      justify-content: space-between;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      position: relative;
+      font-size: 3rem;
+
+    }
+
+
+
+
+
+
+
+
+
+    
+    .title {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .title h1 {
+      font-size: 4.5rem;
+      letter-spacing: 30px;
+    }
+
+    .title p {
+      font-size: 2.8rem;
+      margin-top: 1px;
+    }
+
+    .contact-box {
+      background: #dcdcdc;
+      padding: 40px;
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 700px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      gap: 40px;
+    }
+
+    .contact-item {
+      display: flex;
+     
+      font-size: 2rem;
+      font-weight: bold;
+      gap: 100px;
+
+
+    }
+
+    .contact-item p{
+      display: flex;
+      align-items: center;
+
+    }
+
+    .contact-item img {
+      width: 85px;
+      height: 75px;
+      transition: transform 0.3s;
+    }
+
+    .contact-item img:hover {
+      transform: scale(1.2);
+    }
+
+    footer {
+      margin-top: 80px;
+      color: #333;
+      font-size: 0.85rem;
+    }
+
+
+
+
+
+    
+    /* Decorative corners */
+    .corner {
+      position: absolute;
+      width: 140px;
+      height: 140px;
+      background: #d14f4f;
+      z-index: -1;
+    }
+
+    .corner.tl {
+      top: 300px;
+      left: 0;
+      border: 5px solid black;
+      border-right: none;
+      border-bottom: none;
+    }
+
+    .corner.tr {
+      top: 150px;
+      right: 0;
+      border: 10px solid black;
+      border-left: none;
+      border-bottom: none;
+    }
+
+    .corner.bl {
+      bottom: -1px;
+      left: 150px;
+      border: 7px solid black;
+      border-right: none;
+      width: 300px;
+      height: 100px;
+      border-top: none;
+    }
+
+    .line{
+      position: absolute;
+      display: block;
+      width: 5px;
+      left: 550px;
+      bottom: 170px;
+      height: 300px;
+      border-radius: 25px;
+      opacity: 1;
+      background-color: #000000;
+  }
+  
+
+  .bilog{
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+    left: 545px;
+    bottom: 135px;
+
+    border-radius: 25px;
+    opacity: 0.9;
+    background-color: #000000;
+}
+
+
+    @media (max-width: 600px) {
+      .contact-box {
+        padding: 20px;
+      }
+
+      .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .title h1 {
+        font-size: 2.5rem;
+      }
+
+      .title p {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Corners -->
+  <div class="corner tl"></div>
+  <div class="corner tr"></div>
+  <div class="corner bl"></div>
+
+
+  <header>
+    <div class="logo">
+      <a href="lpage.html"><img src="/images/dice.png" alt="Dice" /></a>
+      <h1 class="titlelogo">Dice</h1>
+    </div>
+
+    <nav>
+      <a href="aboutpage.html" class="active">ABOUT</a>
+      <span>&nbsp;──────────────────────────────&nbsp;</span>
+      <a href="portfolio.html">PORTFOLIO</a>
+    </nav>
+    
+  </header>
+
+  <div class="title">
+    <h1>CONTACTS</h1>
+    <p>Say Hello!</p>
+  </div>
+
+  <div class="line"></div>
+  <div class="bilog"></div>
+  
+  <div class="contact-box">
+    <div class="contact-item">
+      <a href="https://facebook.com/ivantoribio" target="_blank">
+        <img src="/images/picture/colorfb-removebg-preview.png" alt="Facebook" />
+      </a>
+      <p>@ivantoribio</p>
+    </div>
+    <div class="contact-item">
+      <a href="mailto:ivantoribio0905@gmail.com">
+        <img src="/images/picture/colorgmail-removebg-preview.png" alt="Gmail" />
+      </a>
+      <p>ivantoribio0905@gmail.com</p>
+    </div>
+    <div class="contact-item">
+      <a href="https://linkedin.com/in/ivantoribio" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
+      </a>
+      <p>@ivantoribio</p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Ivan Toribio, All Rights Reserved.
+  </footer>
+
+</body>
+</html>
